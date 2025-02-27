@@ -16,7 +16,7 @@ This app demonstrates React state management using hooks like useContext, useRed
 2. Install dependencies:
 
    ```sh
-   yarn start
+   yarn install
    ```
 
 3. Request the .env file from authorized personnel.
