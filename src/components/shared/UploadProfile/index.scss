@@ -1,0 +1,14 @@
+.image-upload {
+  cursor: pointer;
+  border-radius: 50%;
+  img {
+    width: 100%;
+    object-fit: scale-down;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  input {
+    visibility: hidden;
+  }
+}

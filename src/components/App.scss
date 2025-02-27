@@ -1,0 +1,66 @@
+@import "../assets/styles/variables";
+@import "../assets/styles/mixin";
+
+.layout {
+  .sub-layout {
+    position: relative;
+    overflow: hidden;
+    margin-left: 200px;
+
+    @media (max-width: 768px) {
+      margin-left: 0px;
+    }
+
+    .sub-layout-content {
+      padding: 64px 16px 24px 16px;
+      min-height: calc(100vh - 64px);
+      position: relative;
+    }
+
+    .page {
+      .page-content {
+        background: transparent;
+        min-height: 100vh;
+        padding-top: 30px;
+        .title-add {
+          .page-title {
+            margin: 0;
+            font-size: 1.6rem;
+          }
+          button {
+            margin: 10px;
+            height: 40;
+            color: #fff;
+          }
+        }
+        // .search-input {
+        //   width: 100%;
+        // }
+      }
+    }
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

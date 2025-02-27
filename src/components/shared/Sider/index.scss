@@ -1,0 +1,21 @@
+aside.sider {
+  height: 100vh;
+  margin-top: 64px;
+  position: fixed;
+  left: 0;
+  .ant-menu {
+    height: 100%;
+
+    .ant-menu-item {
+      color: #111;
+    }
+
+    .ant-menu-item-selected,
+    .ant-menu-item-active {
+      background: #d2d2d2;
+      a {
+        color: #111;
+      }
+    }
+  }
+}
